@@ -1,0 +1,13 @@
+name: Premier workflow
+
+on push:
+
+jobs:
+  premier_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Message 
+      run: echo "Hello World"
+
+    - name: commande
+      run: ls
