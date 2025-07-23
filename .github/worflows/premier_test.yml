@@ -1,6 +1,6 @@
 name: Premier workflow
 
-on push:
+on: push
 
 jobs:
   premier_job:
