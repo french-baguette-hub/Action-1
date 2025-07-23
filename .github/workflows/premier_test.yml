@@ -7,8 +7,14 @@ jobs:
   premier_job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
       - name: Message 
         run: echo "Hello World"
 
       - name: commande
         run: ls
+
+      - name: Lecture
+        run: cat README.md
