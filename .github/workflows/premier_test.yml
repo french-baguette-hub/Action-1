@@ -26,4 +26,4 @@ jobs:
         run: grep -i "dragon" dragon.txt
 
       - name: lecture du fichier 
-        run: cat dargon.txt
+        run: cat dragon.txt
