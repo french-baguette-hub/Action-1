@@ -10,11 +10,20 @@ jobs:
       - name: Checkout du repo
         uses: actions/checkout@v4
 
-      - name: Message 
-        run: echo "Hello World"
+      - name: Message, ls et cat 
+        run: |
+          echo "Hello World"
+          ls
+          cat README.md
 
-      - name: commande
-        run: ls
+      - name: installation de cowsay
+        run: sudo apt install cowsay -y
 
-      - name: Lecture
-        run: cat README.md
+      - name: utilisation de cowsay
+        run: cowsay -f dragon "Run for cover, I am a Dragon..." >> dragon.txt
+
+      - name: vérification du fichier 
+        run: grep -i "dragon" dragon.txt
+
+      - name: lecture du fichier 
+        run: cat dargon.txt
